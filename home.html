@@ -22,11 +22,10 @@
       </nav>
    </header>
 
-   <main class="mt-5 overflow-auto p-3">
-      <br>
-      <br>
-      <br>
-             <img style="width:330px; height: 290px;" src="https://validatulicencia.com/agua/assets/img/Ilustra_aguador.BMP">
+   <main class="mt-5 overflow-auto p-3" style="margin-bottom: 4rem;">
+      <div class="container">
+         <img style="width:330px; height: 290px;" src="assets/img/img_home.png">
+      </div>             
       <div class="card mb-3 shadow rounded-lg border-0" style="max-width: 540px;" onclick="ModalVenta('Ciel','20')">
          <div class="row no-gutters">
             <div class="col-md-8">
@@ -38,7 +37,7 @@
                         <p class="card-text"><small class="text-muted">$20.00 MXN</small></p>
                      </div>
                      <div class="col-6 d-flex justify-content-end">
-                        <img style="width:80px; height: 100px;" src="assets/img/ciel.png">
+                        <img style="width:80px; height: 100px;" class="img-fluid" src="assets/img/ciel.png">
                      </div>
                   </div>                  
                </div>
@@ -84,7 +83,7 @@
          </div>
       </div>
 
-       <div class="card mb-3 shadow rounded-lg border-0" style="max-width: 540px;" onclick="ModalVenta('Epura','18')">
+       <div class="card shadow rounded-lg border-0" style="max-width: 540px;" onclick="ModalVenta('Epura','18')">
          <div class="row no-gutters">
             <div class="col-md-8">
                <div class="card-body">
@@ -103,77 +102,6 @@
          </div>
       </div>
    </main>
-
-
-
-<!--modal-->
-
-
-<!-- Modal -->
-<div class="modal fade" id="venta_credito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Venta Garrafon 20 Ltrs.</h5>
-    
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="cerrar();">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        
-    
-
-   <label>Producto</label>
-   <input  type="text" id="Tipo_G" class="form-control" placeholder="Inv" style="width: 100px; " readonly>
-
- 
-   <label>Cantidad</label>
-    <input  type="number" id="cant_g" class="form-control" placeholder="Cantidad" style="width: 100px;" value="1" onblur="calcular_costo()">
-
-    <label>UM</label>
-       <input  type="text" id="um_c" class="form-control" placeholder="UM" style="width: 100px;" readonly>
-
-   
-<label>Precio</label>
-       <input  type="text" id="precio_c" class="form-control" placeholder="Precio" style="width: 100px;" readonly>
-
-    
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="cerrar();">Cerrar</button>
-        <button type="button" class="btn btn-primary" onclick="validar();">Vender</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-<!-- modal cierre -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
    <footer>
       <nav class="navbar navbar-light bg-orange fixed-bottom">
@@ -197,6 +125,43 @@
          </ul>
       </nav>
    </footer>
+
+<!-- Modal -->
+<div class="modal fade" id="venta_credito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+         <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Venta Garrafon 20 Ltrs.</h5>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="cerrar();">
+               <span aria-hidden="true">&times;</span>
+            </button>
+         </div>
+         <div class="modal-body">
+            <label>Producto</label>
+            <input type="text" id="Tipo_G" class="form-control" placeholder="Inv" style="width: 100px; " readonly>
+
+
+            <label>Cantidad</label>
+            <input type="number" id="cant_g" class="form-control" placeholder="Cantidad" style="width: 100px;" value="1"
+               onblur="calcular_costo()">
+
+            <label>UM</label>
+            <input type="text" id="um_c" class="form-control" placeholder="UM" style="width: 100px;" readonly>
+
+
+            <label>Precio</label>
+            <input type="text" id="precio_c" class="form-control" placeholder="Precio" style="width: 100px;" readonly>
+
+
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="cerrar();">Cerrar</button>
+            <button type="button" class="btn btn-primary" onclick="validar();">Vender</button>
+         </div>
+      </div>
+   </div>
+</div>   
 </body>
 <script src="assets/bootstrap/js/jquery-3.5.1.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
