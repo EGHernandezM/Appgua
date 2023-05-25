@@ -1,0 +1,10 @@
+body{
+   background: rgb(232,141,112);
+background: linear-gradient(0deg, rgba(232,141,112,1) 5%, rgba(116,119,172,1) 90%);
+   background-position: center;
+   background-size: cover;
+}
+
+.login{
+   min-height: 100vh;
+}
