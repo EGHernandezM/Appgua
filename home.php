@@ -186,7 +186,7 @@ if (!isset($_SESSION['loggedin'])) {
                </a>
             </li>
             <li class="nav-item">
-               <a class="nav-link text-white" href="#">
+               <a class="nav-link text-white" href="perfil.php">
                   <img style="width:30px; height: 30px;" src="assets/img/perfil.png">
 
                </a>

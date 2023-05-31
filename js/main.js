@@ -216,25 +216,6 @@ function calcular_precio() {
 
 
 
-function prueba() {
-
-
-
-	const response =  fetch('datos.php', {
-		method: 'POST',
-		headers: {
-			'Content-Type': 'application/json'
-		},
-		body: JSON.stringify({
-			precio_c: document.getElementById('precio_c').value, Tipo_V: document.getElementById('Tipo_V').value, um_c: document.getElementById('um_c').value, cant_g: document.getElementById('cant_g').value, Serv: document.getElementById('Serv').value, Tipo_G: document.getElementById('Tipo_G').value
-		})
-	});
-	return response.json();
-}
-
-
-
-
 
 
 

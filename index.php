@@ -24,7 +24,7 @@ if (mysqli_connect_errno()) {
 	exit();
 }
 
-$consulta = "SELECT id_usr,nombre,apaterno,usuario,contra,perfil,PIN,tipo_cuenta FROM usuarios WHERE usuario='$usuario' and contra='$contra' and activo=1";
+$consulta = "SELECT id_usr,nombre,apaterno,usuario,contra,perfil,tipo_cuenta FROM usuarios WHERE usuario='$usuario' and contra='$contra' and activo=1";
 
 if ($resultado = $mysqli->query($consulta)) {
 
@@ -37,8 +37,8 @@ if ($resultado = $mysqli->query($consulta)) {
 		$usuario_correcto=$fila[3];
 		$palabra_secreta_correcta=$fila[4];
 		$perfil=$fila[5];
-		$PIN=$fila[6];
-		$tipo_cuenta=$fila[7];
+	
+		$tipo_cuenta=$fila[6];
 
 
 
