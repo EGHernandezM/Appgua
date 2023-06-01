@@ -32,7 +32,7 @@ if (mysqli_connect_errno()) {
     exit();
 }
 
-$consulta = "SELECT `nombre`,`apaterno`,`amaterno`,`email`,`codigo_postal`,`Direccion` FROM `usuarios` WHERE id_usr='$id'";
+$consulta = "SELECT `nombre`,`apaterno`,`amaterno`,`email`,`codigo_postal`,`Direccion`,`celular` FROM `usuarios` WHERE id_usr='$id'";
 
 if ($resultado = $mysqli->query($consulta)) {
 
@@ -46,6 +46,7 @@ if ($resultado = $mysqli->query($consulta)) {
            $email=$fila[3];
             $CP=$fila[4];
           $Direccion=$fila[5];
+           $cel=$fila[6];
 
 
 
@@ -109,7 +110,7 @@ if ($resultado = $mysqli->query($consulta)) {
 <fieldset>
 
 <!-- Form Name -->
-<legend><center><h2><b>Perfil</b></h2></center></legend><br>
+<legend><center><h2 style="margin-top:10px;"><b>Perfil</b></h2></center></legend><br>
 
 <!-- Text input-->
 
@@ -167,6 +168,17 @@ if ($resultado = $mysqli->query($consulta)) {
     <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
   <input name="user_password" placeholder="Password" class="form-control"  type="password">
+    </div>
+  </div>
+</div>
+
+
+<div class="form-group">
+  <label class="col-md-4 control-label" >Numero Celular</label> 
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input name="Celular" placeholder="Celular" class="form-control" maxlength="10" type="text" Value="<?php echo $cel?>">
     </div>
   </div>
 </div>
