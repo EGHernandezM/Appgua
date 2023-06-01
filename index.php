@@ -125,7 +125,7 @@
                      <label for="clave" class="white-text">Contraseña</label>                     
                   </div>
                   <span class="helper-text" data-error="wrong" data-success="left" style="margin-bottom: 15rem">
-                     <a class="white-text" href="#">Registrate</a>
+                     <a class="white-text" href="registro.php">Registrate</a>
                   </span>
                </div>
                
