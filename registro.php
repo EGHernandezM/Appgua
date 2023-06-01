@@ -20,8 +20,15 @@
 
    </style>
 </head>
-
+<center>
 <body>
+
+  <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-blue-dark fixed-top">
+       
+      </nav>
+   </header>
+
    
 
    <main class="mt-5 overflow-auto p-3" style="margin-bottom: 4rem;">
@@ -139,7 +146,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label"></label>
   <div class="col-md-4"><br>
-    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="submit" class="btn btn-warning" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspACTUALIZAR <span class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="submit" class="btn btn-warning" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspREGISTRAR<span class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
   </div>
 </div>
 
@@ -149,6 +156,11 @@
     </div>
    </main>
 
+   
+   <footer>
+      <nav class="navbar navbar-light bg-orange fixed-bottom">
+      </nav>
+   </footer>
   
 
 
