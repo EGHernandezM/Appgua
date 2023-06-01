@@ -43,11 +43,11 @@
 <!-- Text input-->
 
 <div class="form-group">
-  <label class="col-md-4 control-label">Nombre</label>  
+  <label class="col-md-4 control-label" style="text-align: left">Nombre</label>  
   <div class="col-md-4 inputGroupContainer">
   <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input  name="Nombre" placeholder="Nombre" class="form-control"  type="text" Value="<?php echo $nombre?>">
+  <input  name="Nombre" class="form-control"  type="text" >
     </div>
   </div>
 </div>
@@ -55,22 +55,22 @@
 <!-- Text input-->
 
 <div class="form-group">
-  <label class="col-md-4 control-label" >Apellido Paterno</label> 
+  <label class="col-md-4 control-label" style="text-align: left">Apellido Paterno</label> 
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="APaterno" placeholder="Apellido Paterno" class="form-control"  type="text" Value="<?php echo $Apaterno?>">
+  <input name="APaterno" class="form-control"  type="text" >
     </div>
   </div>
 </div>
 
 
 <div class="form-group">
-  <label class="col-md-4 control-label" >Apellido Materno</label> 
+  <label class="col-md-4 control-label" style="text-align: left">Apellido Materno</label> 
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="Amaterno" placeholder="Apellido Materno" class="form-control"  type="text" Value="<?php echo $Amaterno?>">
+  <input name="Amaterno"  class="form-control"  type="text" >
     </div>
   </div>
 </div>
@@ -79,11 +79,11 @@
   
 <!-- Text input-->
       <div class="form-group">
-  <label class="col-md-4 control-label">E-Mail</label>  
+  <label class="col-md-4 control-label" style="text-align: left">E-Mail</label>  
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-  <input name="email" placeholder="E-Mail Address" class="form-control"  type="text" Value="<?php echo $email?>">
+  <input name="email"  class="form-control"  type="text" >
     </div>
   </div>
 </div>
@@ -91,22 +91,22 @@
 <!-- Text input-->
 
 <div class="form-group">
-  <label class="col-md-4 control-label" >Password</label> 
+  <label class="col-md-4 control-label" style="text-align: left">Password</label> 
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="user_password" placeholder="Password" class="form-control"  type="password">
+  <input name="user_password"  class="form-control"  type="password">
     </div>
   </div>
 </div>
 
 
 <div class="form-group">
-  <label class="col-md-4 control-label" >Numero Celular</label> 
+  <label class="col-md-4 control-label" style="text-align: left">Numero Celular</label> 
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="Celular" placeholder="Celular" class="form-control" maxlength="10" type="text" Value="<?php echo $cel?>">
+  <input name="Celular"  class="form-control" maxlength="10" type="text" >
     </div>
   </div>
 </div>
@@ -114,11 +114,11 @@
 <!-- Text input-->
 
 <div class="form-group">
-  <label class="col-md-4 control-label" >Direccion</label> 
+  <label class="col-md-4 control-label" style="text-align: left">Direccion</label> 
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="Dirección" placeholder="Direccion" class="form-control"  type="Text" Value="<?php echo $Direccion?>">
+  <input name="Dirección" class="form-control"  type="Text" >
     </div>
   </div>
 </div>
@@ -128,11 +128,11 @@
 
        
 <div class="form-group">
-  <label class="col-md-4 control-label">Codigo Postal</label>  
+  <label class="col-md-4 control-label" style="text-align: left">Codigo Postal</label>  
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-  <input name="CP" placeholder="C.P." class="form-control" type="text" Value="<?php echo $CP?>">
+  <input name="CP"  class="form-control" type="text">
     </div>
   </div>
 </div>
