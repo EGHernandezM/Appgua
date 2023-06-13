@@ -1,0 +1,9 @@
+.form-control:focus {
+   border: 1px solid #818181 !important;
+   outline: none !important;
+   box-shadow: none !important;
+}
+
+.form-control{
+   box-shadow: inset 0px 1px 3px rgba(128, 128, 128, 0.1) !important;
+}
