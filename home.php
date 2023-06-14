@@ -206,13 +206,16 @@ if (!isset($_SESSION['loggedin'])) {
                <span aria-hidden="true">&times;</span>
             </button>
          </div>
+
+ <form role="form" method="POST" action="conekta/index.php" name="Form_Venta">
+
          <div class="modal-body">
              <label>Producto</label>
-             <input type="text" id="Tipo_G" class="form-control" placeholder="Inv" style="width: 130px; " readonly>
+             <input type="text" id="Tipo_G" name="Tipo_G" class="form-control" placeholder="Inv" style="width: 130px; " readonly>
 
              <label>Servicio</label>
 
-             <select id="Serv" class="form-control" placeholder="Servicio" style="width: 195px;" onchange="calcular_precio()">
+             <select id="Serv" name="Serv" class="form-control" placeholder="Servicio" style="width: 195px;" onchange="calcular_precio()">
                  <option value="0" selected>--Seleccione Servicio--</option>
                  <option value="1">Refill (Intercambio)</option>
                  <option value="2">Refill (Mismo Envase)</option>
@@ -220,29 +223,29 @@ if (!isset($_SESSION['loggedin'])) {
              </select>
 
              <label>Cantidad</label>
-             <input type="number" id="cant_g" class="form-control" placeholder="Cantidad" style="width: 130px;"
+             <input type="number" id="cant_g" name="cant_g" class="form-control" placeholder="Cantidad" style="width: 130px;"
                     onkeyup="calcular_costo()">
 
              <label>UM</label>
-             <input type="text" id="um_c" class="form-control" placeholder="UM" style="width: 130px;" readonly>
+             <input type="text" id="um_c"  name="um_c" class="form-control" placeholder="UM" style="width: 130px;" readonly>
 
 
              <label>Precio</label>
-             <input type="text" id="precio_c" class="form-control" placeholder="Precio" style="width: 130px;" readonly>
+             <input type="text" id="precio_c" name="precio_c" class="form-control" placeholder="Precio" style="width: 130px;" readonly>
 
              <label>Tipo Pago</label>
-             <select id="Tipo_V" class="form-control" placeholder="Venta" style="width: 215px;">
+             <select id="Tipo_V" name="Tipo_V" class="form-control" placeholder="Venta" style="width: 215px;">
                  <option value="0" selected>--Seleccione Tipo Pago--</option>
                  <option value="1">Efectivo (Contra Entrega)</option>
                  <option value="2">Pago con Tarjeta</option>
 
              </select>
             
-             <input type="hidden" id="id_user" class="form-control" placeholder="user" style="width: 130px;" value="<?php echo $id ?>" readonly>
+             <input type="hidden" id="id_user" name="id_user" class="form-control" placeholder="user" style="width: 130px;" value="<?php echo $id ?>" readonly>
          </div>
          <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="cerrar();">Cerrar</button>
-            <button type="button" class="btn btn-primary" onclick="Vender();">Vender</button>
+            <button type="button" class="btn btn-primary" onclick="Validar();">Vender</button>
          </div>
       </div>
    </div>

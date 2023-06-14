@@ -1,8 +1,14 @@
 ﻿<?php
 
 $Producto=$_POST['Tipo_G'];
+$Serv = $_POST['Serv'];
+$cant_g = $_POST['cant_g'];
+$um_c=$_POST['um_c'];
+$precio_c=$_POST['precio_c'];
+$Tipo_V=$_POST['Tipo_V'];
+$id_user=$_POST['id_user'];
 
-echo $Producto;
+
 
 ?>
 
@@ -12,48 +18,68 @@ echo $Producto;
 <head>
 	<title>Pago En Linea</title>
 	<script type="text/javascript" src="https://cdn.conekta.io/js/latest/conekta.js"></script>
-  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 </head>
 <body>
-<div class="container">
+<div class="card" style="width:400px; margin-left:10px; margin-top:10px">
 	<form action="cobro.php" method="POST" id="card-form">
+
+    <input type="hidden" name="Producto" value="<?php echo $Producto ?>">
+     <input type="hidden" name="Serv" value="<?php echo $Serv ?>">
+      <input type="hidden" name="cant_g" value="<?php echo $cant_g ?>">
+     <input type="hidden" name="um_c" value="<?php echo $um_c ?>">
+     <input type="hidden" name="precio_c" value="<?php echo $precio_c ?>">
+     <input type="hidden" name="Tipo_V" value="<?php echo $Tipo_V ?>">
+     <input type="hidden" name="id_user" value="<?php echo $id_user ?>">
 	<br>
-	Pago En Linea
+  <div class="card-header">
+            <div class="row display-tr">
+               <h3>Pago en línea</h3>
+            </div>
+         </div>
 	<br>
+   <div class="card-body">
+            <div class="row">
+        
   <span class="card-errors"></span>
-  <div><br>
+  <div class="col-md-9" style="margin-left:10px;" ><br>
     <label>
       <span>Nombre del tarjetahabiente</span>
-      <input class="form-control" size="20" data-conekta="card[name]" type="text">
+      <input class="form-control" type="text"  size="20" data-conekta="card[name]" type="text">
     </label>
   </div>
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
-<div>
+<div class="col-md-6" style="margin-left:10px;">
     <label>
-      <span>Número de tarjeta de crédito</span>
-      <input class="form-control" size="20" data-conekta="card[number]" type="text">
+      <span>Número de tarjeta</span>
+      <input class="form-control" maxlength="16" size="20" data-conekta="card[number]" type="text">
     </label>
   </div>
-  <div>
+  <div  class="col-md-6" style="margin-left:10px;">
     <label>
       <span>CVC</span>
-      <input class="form-control" size="4" data-conekta="card[cvc]" type="text">
+      <input class="form-control" size="4" data-conekta="card[cvc]" type="text" maxlength="3">
     </label>
   </div>
-  <div>
+  <div class="col-md-12" style="margin-left:10px;">
     <label>
-      <span>Fecha de expiración (MM/AAAA)</span>
-      <input size="2" data-conekta="card[exp_month]" type="text">
+      <span>Expiración (MM/AAAA)</span>
+      <input size="2" data-conekta="card[exp_month]" type="text" maxlength="2">
     </label>
     <span>/</span>
-    <input  size="4" data-conekta="card[exp_year]" type="text">
+    <input  size="4" data-conekta="card[exp_year]" type="text" maxlength="4">
   </div>
-  <button class="btn btn-primary" type="submit">Pagar</button>
+  <br>
+  <center><button class="btn btn-primary" type="submit">Pagar</button></center>
+  </div>
+</div>
 </form>
+<br>
 </div>
 <script type="text/javascript" >
   Conekta.setPublicKey('key_GbeHeR1cqfEhaQa7zwEvi1q');
