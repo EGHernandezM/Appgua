@@ -84,7 +84,7 @@
    </form>
 
    <script>
-      Conekta.setPublicKey("tuapikeypublica");
+      Conekta.setPublicKey("key_GbeHeR1cqfEhaQa7zwEvi1q");
 
       var conektaSuccessResponseHandler = function(token) {
 

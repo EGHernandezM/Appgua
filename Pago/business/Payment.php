@@ -2,7 +2,7 @@
 require_once("bin/conekta-php-master/lib/Conekta.php");
 class Payment{
 
-    private $ApiKey="tuapikeyprivada";
+    private $ApiKey="key_uHHqOnXJDEjq5kU2rI7XA6b";
     private $ApiVersion="2.0.0";
 
     private $UserDB="root";

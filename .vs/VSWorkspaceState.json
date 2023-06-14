@@ -1,8 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\js"
+    "\\Pago",
+    "\\Pago\\bin",
+    "\\Pago\\bin\\conekta-php-master",
+    "\\Pago\\bin\\conekta-php-master\\lib",
+    "\\Pago\\bin\\conekta-php-master\\lib\\Conekta"
   ],
-  "SelectedNode": "\\registro.php",
+  "SelectedNode": "\\Pago\\index.php",
   "PreviewInSolutionExplorer": false
 }
