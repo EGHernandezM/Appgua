@@ -105,11 +105,25 @@
    <link rel="stylesheet" href="css/materialize.min.css">
    <link rel="stylesheet" href="css/login.css">
 </head>
+<style>
+   .logo{
+      width: 100px;
+      height: 100px;
+      padding: 10px;
+      border: 1px solid #e88d70;
+      border-radius: 50%;
+      padding: 15px;
+      background-color: #e88d70;
+   }
+</style>
 
 <body>
    <div class="login valign-wrapper">
       <div class="row">
          <div class="col s12 center">
+            <div class="">
+              <img src="assets/img/Aguadoor_Azul.PNG" class="responsive-img logo" > <!-- notice the "circle" class -->
+            </div>
             <form class="col s12" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                <div class="row">
                   <div class="input-field col s12">
